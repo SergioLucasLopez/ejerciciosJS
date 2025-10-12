@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicio 3 · Lista Dinámica</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5}
+    nav a{display:inline-block;margin-bottom:16px}
+    .app{border:1px solid #eee;border-radius:12px;padding:16px}
+    .row{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+    input[type="text"]{flex:1;padding:.5rem;border:1px solid #ccc;border-radius:8px}
+    button{padding:.5rem .8rem;border-radius:8px;border:1px solid #aaa;cursor:pointer}
+    ul{list-style:decimal;padding-left:18px}
+    li{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0}
+    .empty{color:#666}
+  </style>
+  <script src="./js/js_ejercicio3.js" defer></script>
+</head>
+<body>
+  <nav><a href="./index.html">← Volver al índice</a></nav>
+  <h1>Ejercicio 3 · Lista Dinámica</h1>
+
+  <section class="app">
+    <div class="row">
+      <input id="txtItem" type="text" placeholder="Nuevo ítem…" aria-label="Nuevo ítem"/>
+      <button id="btnAgregar">Agregar</button>
+    </div>
+
+    <p id="estado" class="empty">La lista está vacía.</p>
+    <ul id="lista"></ul>
+  </section>
+</body>
+</html>
