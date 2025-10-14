@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicio 5 · Calculadora Sencilla</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5}
+    nav a{display:inline-block;margin-bottom:16px}
+    .app{border:1px solid #eee;border-radius:12px;padding:16px}
+    .row{display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+    input[type="text"]{padding:.6rem .8rem;border:1px solid #ccc;border-radius:8px;min-width:200px}
+    .btns button{padding:.5rem .9rem;border:1px solid #aaa;border-radius:8px;cursor:pointer;background:white}
+    .btns button:hover{background:#f6f6f6}
+    .msg{margin-top:10px}
+    .error{color:#b00020;font-weight:600}
+    .ok{font-weight:700}
+    .hint{color:#666;font-size:.9rem}
+    .field{display:flex;flex-direction:column;gap:6px}
+  </style>
+  <script src="./js/js_ejercicio5.js" defer></script>
+</head>
+<body>
+  <nav><a href="./index.html">← Volver al índice</a></nav>
+  <h1>Ejercicio 5 · Calculadora Sencilla</h1>
+
+  <section class="app" aria-labelledby="calcTitle">
+    <h2 id="calcTitle" class="hint">Introduce dos números y elige una operación</h2>
+
+    <div class="row">
+      <div class="field">
+        <label for="n1">Número 1</label>
+        <input id="n1" type="text" inputmode="decimal" placeholder="p. ej. 12.5"/>
+      </div>
+
+      <div class="field">
+        <label for="n2">Número 2</label>
+        <input id="n2" type="text" inputmode="decimal" placeholder="p. ej. 3"/>
+      </div>
+    </div>
+
+    <div class="row btns" role="group" aria-label="Operaciones">
+      <button id="btnSumar">Sumar</button>
+      <button id="btnRestar">Restar</button>
+      <button id="btnMultiplicar">Multiplicar</button>
+      <button id="btnDividir">Dividir</button>
+    </div>
+
+    <p id="mensaje" class="msg" aria-live="polite"></p>
+  </section>
+</body>
+</html>
