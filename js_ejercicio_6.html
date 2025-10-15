@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicio 6 · Temporizador</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5}
+    nav a{display:inline-block;margin-bottom:16px}
+    .app{border:1px solid #eee;border-radius:12px;padding:16px}
+    .time{font-size:3rem;font-weight:700;letter-spacing:.03em;margin:8px 0}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    button{padding:.6rem 1rem;border:1px solid #aaa;border-radius:10px;background:#fff;cursor:pointer}
+    button:disabled{opacity:.5;cursor:not-allowed}
+  </style>
+  <script src="./js/js_ejercicio6.js" defer></script>
+</head>
+<body>
+  <nav><a href="./index.html">← Volver al índice</a></nav>
+  <h1>Ejercicio 6 · Temporizador (Inicio / Pausa / Reinicio)</h1>
+
+  <section class="app">
+    <div id="display" class="time" aria-live="polite">00:00:00</div>
+    <div class="row" role="group" aria-label="Controles de temporizador">
+      <button id="btnStart">Iniciar</button>
+      <button id="btnPause" disabled>Pausar</button>
+      <button id="btnReset">Reiniciar</button>
+    </div>
+  </section>
+</body>
+</html>
