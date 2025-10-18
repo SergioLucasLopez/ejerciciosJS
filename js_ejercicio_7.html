@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejercicio 7 · Generador de Contraseñas</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.5}
+    nav a{display:inline-block;margin-bottom:16px}
+    .app{border:1px solid #eee;border-radius:12px;padding:16px}
+    .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+    input[type="number"], input[readonly]{padding:.6rem .8rem;border:1px solid #ccc;border-radius:8px;min-width:180px}
+    button{padding:.6rem 1rem;border:1px solid #aaa;border-radius:10px;background:#fff;cursor:pointer}
+    .msg{margin-top:8px}
+    .error{color:#b00020;font-weight:600}
+    .ok{font-weight:700}
+  </style>
+  <script src="./js/js_ejercicio7.js" defer></script>
+</head>
+<body>
+  <nav><a href="./index.html">← Volver al índice</a></nav>
+  <h1>Ejercicio 7 · Generador de Contraseñas Aleatorias</h1>
+
+  <section class="app">
+    <div class="row">
+      <label for="len">Longitud</label>
+      <input id="len" type="number" min="4" step="1" value="12" />
+      <button id="btnGen">Generar contraseña</button>
+    </div>
+
+    <div class="row">
+      <label for="out">Contraseña</label>
+      <input id="out" type="text" readonly placeholder="— todavía no generada —"/>
+      <button id="btnCopy" title="Copiar contraseña al portapapeles">Copiar</button>
+    </div>
+
+    <p id="msg" class="msg" aria-live="polite"></p>
+  </section>
+</body>
+</html>
